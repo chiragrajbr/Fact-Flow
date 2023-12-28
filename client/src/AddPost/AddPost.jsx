@@ -71,6 +71,9 @@ const AddPost = () => {
             <input type="text" placeholder="Caption.." />
           </div>
         </div>
+        <div>
+          <button>Add</button>
+        </div>
       </form>
     </div>
   );
