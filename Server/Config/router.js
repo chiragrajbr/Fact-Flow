@@ -1,0 +1,10 @@
+const express = require("express");
+const route = express.Router();
+const usercontroller = require("../App/Controller/UserControl/usercontrol");
+const upload = require("../App/MiddleWare/multer");
+const postController = require("../App/Controller/PostControl/postcontrol");
+route.post("/register",usercontroller.register);
+route.post("/login", usercontroller.login);
+route.get("/allUser", usercontroller.allUsers);
+route.post("/addPost", postController.addPost);
+module.exports = route;
