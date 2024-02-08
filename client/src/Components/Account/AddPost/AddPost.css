@@ -1,0 +1,92 @@
+.addpost {
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(191, 205, 205);
+  height: 39.9rem;
+  overflow-y: hidden;
+}
+
+.addpost-form {
+  position: relative;
+  height: fit-content;
+  width: 25rem;
+  margin-top: 5%;
+  margin-left: 35%;
+  background-color: white;
+}
+
+.addpost-titile {
+  padding-top: 2rem;
+  padding-left: 8rem;
+  font-size: 25px;
+  font-weight: bolder;
+  opacity: 80%;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.addpost-caption {
+  margin-top: 1rem;
+}
+
+.addpost-caption textarea {
+  width: 22rem;
+  min-height: 3rem;
+  margin-left: 1.5rem;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  height: 2rem;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400px;
+  margin-bottom: 1rem;
+}
+
+.addpost-image {
+  width: 19rem;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  opacity: 80%;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(49, 26, 26, 0.5);
+}
+.addpost-image-cancel {
+  margin-top: 0.8rem;
+  position: absolute;
+  margin-left: 21.5rem;
+}
+.apppost-imagedisplay {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  height: 250px;
+  width: 350px;
+}
+
+.addpost-addbutton button {
+  font-size: 20px;
+  margin-top: 1rem;
+  margin-left: 45rem;
+  color: rgb(141, 203, 48);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  width: 5rem;
+  letter-spacing: 1px;
+  font-weight: 400px;
+}
+.addpost-addbutton button:hover {
+  background-color: rgb(117, 244, 117);
+  color: white;
+  box-shadow: 5px 5px 10px #308c91;
+}
+.addpost-error p {
+  margin-left: 6rem;
+  font-size: 13px;
+  color: red;
+}
