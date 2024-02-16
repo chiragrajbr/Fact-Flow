@@ -19,5 +19,6 @@ routes.post(
   upload.single("image"),
   postController.addpost
 );
+routes.get("/getAllPosts", auth.verify, postController.getAllPost);
 
 module.exports = { routes };

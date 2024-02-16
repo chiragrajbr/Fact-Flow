@@ -7,7 +7,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-success">
+      <nav className="navbar navbar-expand-lg bg-success fixed-top ">
         <div
           className="navbar navbar-brand text-gray-700  font-bold tracking-widest cursor-pointer "
           onClick={() => {

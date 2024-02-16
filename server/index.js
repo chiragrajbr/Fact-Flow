@@ -17,6 +17,7 @@ app.use(
   })
 );
 dbConnection();
+app.use("/Images", express.static("Images"));
 app.use("/api", routes);
 
 app.listen(port, () => {

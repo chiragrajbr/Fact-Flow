@@ -1,0 +1,54 @@
+.allpost-main {
+  position: relative;
+  height: auto;
+  width: auto;
+  display: grid;
+}
+
+.allpost-sidenav {
+  width: auto;
+  height: auto;
+  position: fixed;
+}
+
+.allpost-data {
+  margin-top: 4rem;
+  height: auto;
+  width: auto;
+  margin-left: 37%;
+  position: relative;
+}
+
+.allpost-post {
+  margin-bottom: 10px;
+  height: 400px;
+  width: 400px;
+  border: 2.5px solid rgb(155, 157, 154);
+  padding: 15px;
+  background-color: rgb(220, 231, 233);
+}
+
+.allpost-post img {
+  height: 300px;
+  width: 100%;
+  display: block;
+}
+.allpost-delete {
+  margin-left: 80%;
+  padding: 5px;
+  color: black;
+}
+
+.allpost-caption {
+  font-size: large;
+  font-style: italic;
+  color: black;
+  font-weight: bold;
+  opacity: 80%;
+  margin-top: 1rem;
+}
+
+.allpost-delete :hover {
+  color: red;
+  filter: drop-shadow(4px 4px 4px rgba(31, 26, 26, 0.5));
+}

@@ -30,19 +30,18 @@ const AddPost = () => {
         "http://localhost:8000/api/addPost",
         formData
       );
-      console.log(result.data.hasOwnProperty("success"));
-      if (result.data.hasOwnProperty("success")) {
+      if (result.data.hasOwnProperty("error")) {
+        toast.warning("failed to upload", {
+          position: "top-center",
+          autoClose: 2000,
+        });
+      } else {
         toast.success("Posted Succesfully", {
           position: "top-center",
           autoClose: 2000,
         });
         setImage(null);
         setcaption("");
-      } else if (result.data.hasOwnProperty("error")) {
-        toast.warning("failed to upload", {
-          position: "top-center",
-          autoClose: 2000,
-        });
       }
     } catch (error) {
       console.log(error);

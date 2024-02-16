@@ -10,7 +10,7 @@ const postSchema = new schema({
     min: 1,
     max: 100,
   },
-  id: {
+  uId: {
     type: mongoose.Schema.Types.ObjectId,
     required: [true, "user is required"],
   },  

@@ -1,25 +1,35 @@
 const { post } = require("../../module/post/post");
 const postController = {};
-postController.addpost = async (req, res) => {
+postController.addpost = (req, res) => {
   const data = req.user;
   const { caption } = req.body;
   const imagePath = req.file.filename;
-  const addImage = new post({
+  const newPost = {
     image: imagePath,
-    caption,
-  
-    userId: data.user_Id,
-  });
-  addImage
+    caption: caption,
+    uId: data.user_Id,
+  };
+  new post(newPost)
     .save()
-    .then((response) => {
-      res.json(response);
-      //console.log(response.data);
+    .then((result) => {
+      res.json(result);
     })
     .catch((e) => {
-      res.json({ error: error });
-      console.log(e.message);
+      res.json({ error: e.message });
     });
 };
 
+postController.getAllPost = async (req, res) => {
+  const data = req.user;
+  try {
+    const allPosts = await post.find({ uId: data.user_Id });
+    res.json(allPosts);
+  } catch (error) {
+    res.json({ error: error.message });
+  }
+};
+
+postController.delete = (req,res) => {
+   
+};
 module.exports = { postController };
